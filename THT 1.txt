@@ -1,0 +1,32 @@
+Mission to find 'Joe' on my school yearbook and follow his social media 
+with Linear search and Binary search approach.
+
+There are 200 students in the school yearbook and each page is sorted out based on 
+the student's alphabetical order.
+
+First approach :	//Complexity -> O(n)
+1.	Pick up the yearbook
+2.	Open the first page of the yearbook
+3.	Look at the page 
+4.	If Joe is on page
+5.		Follow Joe
+6.	Else if Joe is not on page (1)
+7.		Go to the next page (2)
+8.		Go back to line 3
+9.	Else
+10.		Quit
+
+Second approach :	//Complexity -> O(log n)
+1.	Pick up the yearbook
+2.	Open to the middle of the yearbook (100)
+3.	Look at the page 
+4.	If Joe is on page
+5.		Follow Joe
+6.	Else if Joe is earlier in book 
+7.		Open to middle of left half of the book (50)
+8.		Go back to line 3
+9.	Else if Joe is later in book
+10.		Open to middle of right half of the book (150)
+11.		Go back to line 3
+12.	Else
+13.		Quit
